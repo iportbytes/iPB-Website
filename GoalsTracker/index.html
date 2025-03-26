@@ -90,25 +90,28 @@
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="ftco-footer-widget">
-              <span>APPS</span>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="ftco-footer-widget text-center">
+              <span class="mb-4 d-block">APPS</span>
               <div class="apps-lists">
-                <a href="AddOn/index.html" title="Google Sheets Add-on">
-                  <img class="footer-logo" src="images/goalTracker_440.png">
+                <a href="AddOn/index.html" title="Google Sheets Add-on" class="app-item">
+                  <img class="footer-logo" src="images/apps-google-sheets.svg" alt="Google Sheets Add-on">
                   <p class="description">Google Sheets Add-on</p>
                 </a>
-		<a href="https://play.google.com/store/apps/details?id=com.iportbytes.goalstracker" title="Mobile App - Andrioid">
-                  <img class="footer-logo" src="images/goalTracker_440.png">
-                  <p class="description">Mobile App - Andrioid</p>
+                <a href="https://play.google.com/store/apps/details?id=com.iportbytes.goalstracker" title="Mobile App - Android" class="app-item" target="_blank">
+                  <img class="footer-logo" src="images/android-icon.png" alt="Android App">
+                  <p class="description">Android Mobile App</p>
                 </a>
-                <a href="privacy/index.html" title="Privacy Policy">
+              </div>
+              <div class="mt-4">
+                <a href="privacy/index.html" title="Privacy Policy" class="text-white">
                   Privacy Policy
                 </a>
-                </div
+              </div>
             </div>
           </div>
+        </div>
       </div>
     </footer>
 
@@ -121,6 +124,36 @@
   <script src="js/aos.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .apps-lists {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-bottom: 1rem;
+    }
+    .app-item {
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .footer-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+    .description {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .apps-lists {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  </style>
 
   </body>
 </html>
